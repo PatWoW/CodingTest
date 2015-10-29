@@ -22,6 +22,27 @@
 		42A513921BE24B1400DCFB9C /* Cities.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A5138E1BE24B1400DCFB9C /* Cities.m */; };
 		42A513931BE24B1400DCFB9C /* Cities.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A5138E1BE24B1400DCFB9C /* Cities.m */; };
 		42A513941BE24B1400DCFB9C /* Cities.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A5138E1BE24B1400DCFB9C /* Cities.m */; };
+		42A513991BE24C5B00DCFB9C /* RestService.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A513981BE24C5B00DCFB9C /* RestService.m */; };
+		42A5139A1BE24C5B00DCFB9C /* RestService.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A513981BE24C5B00DCFB9C /* RestService.m */; };
+		42A5139B1BE24C5B00DCFB9C /* RestService.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A513981BE24C5B00DCFB9C /* RestService.m */; };
+		42A513A81BE24CC700DCFB9C /* WeatherForecast.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A5139D1BE24CC700DCFB9C /* WeatherForecast.m */; };
+		42A513A91BE24CC700DCFB9C /* WeatherForecast.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A5139D1BE24CC700DCFB9C /* WeatherForecast.m */; };
+		42A513AA1BE24CC700DCFB9C /* WeatherForecast.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A5139D1BE24CC700DCFB9C /* WeatherForecast.m */; };
+		42A513AB1BE24CC700DCFB9C /* Currently.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A5139F1BE24CC700DCFB9C /* Currently.m */; };
+		42A513AC1BE24CC700DCFB9C /* Currently.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A5139F1BE24CC700DCFB9C /* Currently.m */; };
+		42A513AD1BE24CC700DCFB9C /* Currently.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A5139F1BE24CC700DCFB9C /* Currently.m */; };
+		42A513AE1BE24CC700DCFB9C /* Daily.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A513A11BE24CC700DCFB9C /* Daily.m */; };
+		42A513AF1BE24CC700DCFB9C /* Daily.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A513A11BE24CC700DCFB9C /* Daily.m */; };
+		42A513B01BE24CC700DCFB9C /* Daily.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A513A11BE24CC700DCFB9C /* Daily.m */; };
+		42A513B11BE24CC700DCFB9C /* ForecastData.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A513A31BE24CC700DCFB9C /* ForecastData.m */; };
+		42A513B21BE24CC700DCFB9C /* ForecastData.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A513A31BE24CC700DCFB9C /* ForecastData.m */; };
+		42A513B31BE24CC700DCFB9C /* ForecastData.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A513A31BE24CC700DCFB9C /* ForecastData.m */; };
+		42A513B41BE24CC700DCFB9C /* Flags.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A513A51BE24CC700DCFB9C /* Flags.m */; };
+		42A513B51BE24CC700DCFB9C /* Flags.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A513A51BE24CC700DCFB9C /* Flags.m */; };
+		42A513B61BE24CC700DCFB9C /* Flags.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A513A51BE24CC700DCFB9C /* Flags.m */; };
+		42A513B71BE24CC700DCFB9C /* Hourly.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A513A71BE24CC700DCFB9C /* Hourly.m */; };
+		42A513B81BE24CC700DCFB9C /* Hourly.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A513A71BE24CC700DCFB9C /* Hourly.m */; };
+		42A513B91BE24CC700DCFB9C /* Hourly.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A513A71BE24CC700DCFB9C /* Hourly.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +84,20 @@
 		42A5138C1BE24B1400DCFB9C /* Cities+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Cities+CoreDataProperties.m"; sourceTree = "<group>"; };
 		42A5138D1BE24B1400DCFB9C /* Cities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cities.h; sourceTree = "<group>"; };
 		42A5138E1BE24B1400DCFB9C /* Cities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cities.m; sourceTree = "<group>"; };
+		42A513971BE24C5B00DCFB9C /* RestService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RestService.h; path = Westpac/RestService.h; sourceTree = "<group>"; };
+		42A513981BE24C5B00DCFB9C /* RestService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RestService.m; path = Westpac/RestService.m; sourceTree = "<group>"; };
+		42A5139C1BE24CC700DCFB9C /* WeatherForecast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherForecast.h; sourceTree = "<group>"; };
+		42A5139D1BE24CC700DCFB9C /* WeatherForecast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherForecast.m; sourceTree = "<group>"; };
+		42A5139E1BE24CC700DCFB9C /* Currently.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Currently.h; sourceTree = "<group>"; };
+		42A5139F1BE24CC700DCFB9C /* Currently.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Currently.m; sourceTree = "<group>"; };
+		42A513A01BE24CC700DCFB9C /* Daily.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Daily.h; sourceTree = "<group>"; };
+		42A513A11BE24CC700DCFB9C /* Daily.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Daily.m; sourceTree = "<group>"; };
+		42A513A21BE24CC700DCFB9C /* ForecastData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForecastData.h; sourceTree = "<group>"; };
+		42A513A31BE24CC700DCFB9C /* ForecastData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForecastData.m; sourceTree = "<group>"; };
+		42A513A41BE24CC700DCFB9C /* Flags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flags.h; sourceTree = "<group>"; };
+		42A513A51BE24CC700DCFB9C /* Flags.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Flags.m; sourceTree = "<group>"; };
+		42A513A61BE24CC700DCFB9C /* Hourly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hourly.h; sourceTree = "<group>"; };
+		42A513A71BE24CC700DCFB9C /* Hourly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hourly.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +128,7 @@
 		42A513491BE23B7600DCFB9C = {
 			isa = PBXGroup;
 			children = (
+				42A513961BE24C3600DCFB9C /* ServiceLayer */,
 				42A513951BE24B1D00DCFB9C /* Model */,
 				42A513541BE23B7600DCFB9C /* Westpac */,
 				42A513711BE23B7700DCFB9C /* WestpacTests */,
@@ -161,8 +197,29 @@
 				42A5138C1BE24B1400DCFB9C /* Cities+CoreDataProperties.m */,
 				42A5138D1BE24B1400DCFB9C /* Cities.h */,
 				42A5138E1BE24B1400DCFB9C /* Cities.m */,
+				42A5139C1BE24CC700DCFB9C /* WeatherForecast.h */,
+				42A5139D1BE24CC700DCFB9C /* WeatherForecast.m */,
+				42A5139E1BE24CC700DCFB9C /* Currently.h */,
+				42A5139F1BE24CC700DCFB9C /* Currently.m */,
+				42A513A01BE24CC700DCFB9C /* Daily.h */,
+				42A513A11BE24CC700DCFB9C /* Daily.m */,
+				42A513A21BE24CC700DCFB9C /* ForecastData.h */,
+				42A513A31BE24CC700DCFB9C /* ForecastData.m */,
+				42A513A41BE24CC700DCFB9C /* Flags.h */,
+				42A513A51BE24CC700DCFB9C /* Flags.m */,
+				42A513A61BE24CC700DCFB9C /* Hourly.h */,
+				42A513A71BE24CC700DCFB9C /* Hourly.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		42A513961BE24C3600DCFB9C /* ServiceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				42A513971BE24C5B00DCFB9C /* RestService.h */,
+				42A513981BE24C5B00DCFB9C /* RestService.m */,
+			);
+			name = ServiceLayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,12 +352,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42A513B71BE24CC700DCFB9C /* Hourly.m in Sources */,
 				42A513921BE24B1400DCFB9C /* Cities.m in Sources */,
 				42A5135D1BE23B7600DCFB9C /* ViewController.m in Sources */,
 				42A5135A1BE23B7600DCFB9C /* AppDelegate.m in Sources */,
+				42A513B41BE24CC700DCFB9C /* Flags.m in Sources */,
+				42A513A81BE24CC700DCFB9C /* WeatherForecast.m in Sources */,
 				42A513571BE23B7600DCFB9C /* main.m in Sources */,
+				42A513AE1BE24CC700DCFB9C /* Daily.m in Sources */,
 				42A5138F1BE24B1400DCFB9C /* Cities+CoreDataProperties.m in Sources */,
+				42A513991BE24C5B00DCFB9C /* RestService.m in Sources */,
 				42A513631BE23B7600DCFB9C /* Westpac.xcdatamodeld in Sources */,
+				42A513B11BE24CC700DCFB9C /* ForecastData.m in Sources */,
+				42A513AB1BE24CC700DCFB9C /* Currently.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,8 +373,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				42A513931BE24B1400DCFB9C /* Cities.m in Sources */,
+				42A513A91BE24CC700DCFB9C /* WeatherForecast.m in Sources */,
+				42A513B81BE24CC700DCFB9C /* Hourly.m in Sources */,
+				42A513B21BE24CC700DCFB9C /* ForecastData.m in Sources */,
+				42A513AF1BE24CC700DCFB9C /* Daily.m in Sources */,
+				42A513AC1BE24CC700DCFB9C /* Currently.m in Sources */,
 				42A513901BE24B1400DCFB9C /* Cities+CoreDataProperties.m in Sources */,
+				42A513B51BE24CC700DCFB9C /* Flags.m in Sources */,
 				42A513731BE23B7700DCFB9C /* WestpacTests.m in Sources */,
+				42A5139A1BE24C5B00DCFB9C /* RestService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,8 +390,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				42A513941BE24B1400DCFB9C /* Cities.m in Sources */,
+				42A513AA1BE24CC700DCFB9C /* WeatherForecast.m in Sources */,
+				42A513B91BE24CC700DCFB9C /* Hourly.m in Sources */,
+				42A513B31BE24CC700DCFB9C /* ForecastData.m in Sources */,
+				42A513B01BE24CC700DCFB9C /* Daily.m in Sources */,
+				42A513AD1BE24CC700DCFB9C /* Currently.m in Sources */,
 				42A513911BE24B1400DCFB9C /* Cities+CoreDataProperties.m in Sources */,
+				42A513B61BE24CC700DCFB9C /* Flags.m in Sources */,
 				42A5137E1BE23B7700DCFB9C /* WestpacUITests.m in Sources */,
+				42A5139B1BE24C5B00DCFB9C /* RestService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
