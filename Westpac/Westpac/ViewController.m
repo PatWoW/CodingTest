@@ -25,6 +25,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *lblTemperature;
 
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 
 @property (nonatomic,strong) WeatherForecast * forecast;
 @property (nonatomic,strong) ForecastData * selectedForecast;
@@ -176,7 +177,7 @@
 -(void) fetchData{
     
     __weak __typeof(self) weakSelf = self;
-    
+    [self.activityIndicator startAnimating];
     AppDelegate * appDelegate = [[UIApplication sharedApplication] delegate];
     [RestService sharedManager].city= appDelegate.cities[self.segmentControl.selectedSegmentIndex];
     
@@ -194,6 +195,8 @@
             NSLog(@"Error %@", error);
         }
         
+        [strongSelf.activityIndicator stopAnimating];
+
     } ];
     
 }

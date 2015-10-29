@@ -174,6 +174,9 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="IDW-4P-IVf"/>
                                 </connections>
                             </pickerView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="OW3-A6-Twa">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                            </activityIndicatorView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yum-cl-I2D">
                                 <rect key="frame" x="158" y="125" width="169" height="146"/>
                                 <constraints>
@@ -197,6 +200,7 @@
                             <constraint firstItem="eUt-Zl-A5y" firstAttribute="top" secondItem="gMf-JL-Wjf" secondAttribute="bottom" constant="8" id="2Tj-fs-iFh"/>
                             <constraint firstItem="gMf-JL-Wjf" firstAttribute="leading" secondItem="JBU-7s-mTL" secondAttribute="trailing" constant="26" id="5Dz-d5-ffd"/>
                             <constraint firstItem="dyM-5E-2fv" firstAttribute="top" secondItem="Pcs-K4-YSO" secondAttribute="bottom" constant="100" id="7ZA-Pn-irm"/>
+                            <constraint firstItem="OW3-A6-Twa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7p3-1u-5JZ"/>
                             <constraint firstItem="JBU-7s-mTL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24" id="AR8-dv-KkM"/>
                             <constraint firstItem="Iol-dD-ie8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="B5b-AH-DIV"/>
                             <constraint firstItem="dyM-5E-2fv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="40" id="Mjw-3r-zPP"/>
@@ -218,11 +222,13 @@
                             <constraint firstAttribute="leadingMargin" secondItem="TF3-St-Dh3" secondAttribute="leading" id="lsx-sQ-2ef"/>
                             <constraint firstAttribute="trailingMargin" secondItem="yum-cl-I2D" secondAttribute="trailing" constant="32" id="mcj-A6-6n9"/>
                             <constraint firstAttribute="trailingMargin" secondItem="gMf-JL-Wjf" secondAttribute="trailing" constant="25" id="w69-eR-qrZ"/>
+                            <constraint firstItem="OW3-A6-Twa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xbt-2W-nuu"/>
                             <constraint firstAttribute="leadingMargin" secondItem="Pcs-K4-YSO" secondAttribute="leading" id="yYr-Vb-srt"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="OW3-A6-Twa" id="lKP-6M-2VQ"/>
                         <outlet property="imgWeatherIcon" destination="dyM-5E-2fv" id="D9b-Kl-Bug"/>
                         <outlet property="lblHummidity" destination="lAe-lv-V8L" id="mzy-2T-uT1"/>
                         <outlet property="lblRain" destination="eUt-Zl-A5y" id="hWU-zZ-xVh"/>
