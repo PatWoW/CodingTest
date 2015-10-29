@@ -164,6 +164,12 @@
                                     </mask>
                                 </variation>
                             </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kaz-kd-O79">
+                                <rect key="frame" x="20" y="523" width="339" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="Ep7-SZ-b8J"/>
+                                </constraints>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" red="0.3294117647" green="0.67843137249999996" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -173,6 +179,7 @@
                             <constraint firstItem="JBU-7s-mTL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24" id="AR8-dv-KkM"/>
                             <constraint firstItem="Iol-dD-ie8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="B5b-AH-DIV"/>
                             <constraint firstItem="dyM-5E-2fv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="40" id="Mjw-3r-zPP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kaz-kd-O79" secondAttribute="trailing" id="P39-5R-bsg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Pcs-K4-YSO" secondAttribute="trailing" id="RAw-Tk-oqO"/>
                             <constraint firstItem="yum-cl-I2D" firstAttribute="top" secondItem="Pcs-K4-YSO" secondAttribute="bottom" constant="85" id="Rcm-Oa-X1p"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Iol-dD-ie8" secondAttribute="trailing" constant="8" id="S02-uj-80S"/>
@@ -181,7 +188,9 @@
                             <constraint firstItem="gMf-JL-Wjf" firstAttribute="top" secondItem="yum-cl-I2D" secondAttribute="bottom" constant="42" id="Zm2-xq-pSj"/>
                             <constraint firstAttribute="trailingMargin" secondItem="eUt-Zl-A5y" secondAttribute="trailing" constant="21" id="bJn-Tx-wlo"/>
                             <constraint firstItem="Iol-dD-ie8" firstAttribute="top" secondItem="eUt-Zl-A5y" secondAttribute="bottom" constant="27" id="d37-5l-vuC"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kaz-kd-O79" secondAttribute="bottom" constant="80" id="hWg-x0-pgk"/>
                             <constraint firstItem="lAe-lv-V8L" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="32" id="ji6-rq-vC1"/>
+                            <constraint firstItem="kaz-kd-O79" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="kDS-Xv-Muj"/>
                             <constraint firstItem="lAe-lv-V8L" firstAttribute="top" secondItem="JBU-7s-mTL" secondAttribute="bottom" constant="8" id="lLe-JD-2z0"/>
                             <constraint firstItem="yum-cl-I2D" firstAttribute="leading" secondItem="dyM-5E-2fv" secondAttribute="trailing" constant="18" id="uYo-sh-3Bq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="gMf-JL-Wjf" secondAttribute="trailing" constant="25" id="w69-eR-qrZ"/>
@@ -195,12 +204,13 @@
                         <outlet property="lblRain" destination="eUt-Zl-A5y" id="hWU-zZ-xVh"/>
                         <outlet property="lblSummary" destination="Iol-dD-ie8" id="CaZ-qH-OhR"/>
                         <outlet property="lblTemperature" destination="yum-cl-I2D" id="jrT-yq-H4B"/>
+                        <outlet property="pickerView" destination="kaz-kd-O79" id="zWw-az-Jj8"/>
                         <outlet property="segmentControl" destination="Pcs-K4-YSO" id="91z-fm-Sjp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="395.5" y="354.5"/>
+            <point key="canvasLocation" x="836.5" y="311.5"/>
         </scene>
     </scenes>
     <resources>

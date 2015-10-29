@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *lblHummidity;
 @property (weak, nonatomic) IBOutlet UILabel *lblRain;
 @property (weak, nonatomic) IBOutlet UILabel *lblSummary;
+@property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
 
 @property (weak, nonatomic) IBOutlet UILabel *lblTemperature;
 @end
@@ -22,6 +23,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self rotatePickerView];
     
  }
 
@@ -30,5 +32,17 @@
     
 }
 
-   
+
+-(void) rotatePickerView{
+    
+    //Rotate the picker view horizontally
+    
+    CGAffineTransform rotate = CGAffineTransformMakeRotation(-3.14/2);
+    rotate = CGAffineTransformScale(rotate, 0.10, 6.0);
+    [self.pickerView setTransform:rotate];
+    
+    self.pickerView.backgroundColor = [UIColor whiteColor];
+}
+
+
 @end
