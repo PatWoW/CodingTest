@@ -14,11 +14,11 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Pcs-K4-YSO">
-                                <rect key="frame" x="20" y="32" width="560" height="29"/>
+                                <rect key="frame" x="16" y="32" width="343" height="29"/>
                                 <segments>
                                     <segment title="Sydney"/>
                                     <segment title="Melbourne"/>
@@ -31,14 +31,24 @@
                                     <action selector="segmentControlChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="EI0-Gd-FRa"/>
                                 </connections>
                             </segmentedControl>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sunny" translatesAutoresizingMaskIntoConstraints="NO" id="dyM-5E-2fv">
+                                <rect key="frame" x="56" y="180" width="100" height="91"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="91" id="8Fq-p6-yjP"/>
+                                    <constraint firstAttribute="width" constant="100" id="tOS-Qn-Dzh"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.3294117647" green="0.67843137249999996" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="dyM-5E-2fv" firstAttribute="top" secondItem="Pcs-K4-YSO" secondAttribute="bottom" constant="120" id="7ZA-Pn-irm"/>
+                            <constraint firstItem="dyM-5E-2fv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="40" id="Mjw-3r-zPP"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Pcs-K4-YSO" secondAttribute="trailing" id="RAw-Tk-oqO"/>
                             <constraint firstItem="Pcs-K4-YSO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="12" id="T79-f0-EaT"/>
                             <constraint firstAttribute="leadingMargin" secondItem="Pcs-K4-YSO" secondAttribute="leading" id="yYr-Vb-srt"/>
                         </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="segmentControl" destination="Pcs-K4-YSO" id="91z-fm-Sjp"/>
                     </connections>
@@ -48,4 +58,7 @@
             <point key="canvasLocation" x="396" y="355"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Sunny" width="180" height="190"/>
+    </resources>
 </document>
