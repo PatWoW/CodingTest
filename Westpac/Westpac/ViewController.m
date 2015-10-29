@@ -41,16 +41,10 @@
     [super viewDidLoad];
     [self rotatePickerView];
     
-
-    
  }
 
-- (IBAction)segmentControlChanged:(UISegmentedControl *)sender {
-    
-    [self fetchData];
 
-}
-
+#pragma mark - Picker View
 
 -(void) rotatePickerView{
     
@@ -60,9 +54,46 @@
     rotate = CGAffineTransformScale(rotate, 0.30, 6.0);
     [self.pickerView setTransform:rotate];
     
-    //self.pickerView.backgroundColor = [UIColor whiteColor];
 }
 
+#pragma mark - Refresh UI
+
+-(void) refreshUI{
+    
+    NSString * icon = self.selectedForecast.icon;
+    
+    NSString * iconName = [WeatherHelpher weatherIcon:icon];
+    
+    self.imgWeatherIcon.image = [UIImage imageNamed:iconName];
+    
+    self.lblSummary.text = self.selectedForecast.summary;
+    
+    [self.lblSummary sizeToFit];
+    
+    NSLog(@"%@",[NSString stringWithFormat:@"%.2lf",self.selectedForecast.temperatureMax]);
+
+    
+    NSString *temperature = [NSString stringWithFormat:@"%@%@C",[NSString stringWithFormat:@"%.0lf",(self.forecast.currently.temperature-32)/1.8], @"\u00B0"];
+    
+    self.lblTemperature.text = temperature ;
+    
+    [self.lblTemperature sizeToFit];
+    self.lblHummidity.text =[NSString stringWithFormat:@"%.0lf %%", self.selectedForecast.humidity*100];
+    self.lblRain.text =[NSString stringWithFormat:@"%.0lf %%", self.selectedForecast.precipProbability*100];
+    
+}
+
+
+
+#pragma mark - Segment Control
+- (IBAction)segmentControlChanged:(UISegmentedControl *)sender {
+    
+    [self fetchData];
+
+}
+
+
+#pragma  mark picker view delegate
 -(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
     return 1;
 }
@@ -74,12 +105,7 @@
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
     
     self.selectedForecast = [self.pickerViewArray objectAtIndex:row];
-    
-    [self updateUi];
-    
-    
-    
-    
+    [self refreshUI];
     
 }
 
@@ -97,12 +123,20 @@
     
     NSLog(@"Time %f Day %@", data.time, [self getDateFromDouble:data.time ]);
     
-    lblTemp.text = [self getDateFromDouble:data.time ];
+    NSString * str = [self getDateFromDouble:data.time ];
+    
+    str= [str stringByAppendingString:@"\n"];
+    NSString *temperature = [NSString stringWithFormat:@"Max %@%@C",[NSString stringWithFormat:@"%.0lf",(data.temperatureMax-32)/1.8], @"\u00B0"];
+
+    str =[str stringByAppendingString:temperature];
+    
+    lblTemp.text =str ;
     
     
     //Label Appearance
-    lblTemp.font=[UIFont fontWithName:@"Helvetica-Bold" size:26.0f];
+    lblTemp.font=[UIFont fontWithName:@"Helvetica-Bold" size:12.0f];
     lblTemp.textAlignment = NSTextAlignmentCenter;
+    lblTemp.numberOfLines = 0;
     lblTemp.backgroundColor = [UIColor clearColor];
     lblTemp.textColor =[UIColor whiteColor];
     lblTemp.clipsToBounds = YES;
@@ -111,8 +145,7 @@
     //Hide the default indicator and show the image indicator
     [[_pickerView.subviews objectAtIndex:1] setHidden:YES];
     [[_pickerView.subviews objectAtIndex:2] setHidden:YES];
-//
-    //Centre the indicator to picker view
+
     
     
     return lblTemp;
@@ -125,12 +158,7 @@
     NSLog(@"%@" ,self.forecast.daily.forecastData);
     
     self.pickerViewArray = self.forecast.daily.forecastData;
-    
-    
-    
-    //    NSLog(@"Time %f Day %@", self.forecast.daily.data.time, [self getDatFromDouble:self.forecast.daily.data. ]);
-    
-    
+
     
     [self.pickerView reloadAllComponents];
     if ([self.pickerViewArray count]>0) {
@@ -143,6 +171,8 @@
     
 }
 
+
+#pragma mark - fetch forecast data
 -(void) fetchData{
     
     __weak __typeof(self) weakSelf = self;
@@ -159,7 +189,7 @@
             NSLog(@"weatherForecast%@" ,weatherForecast);
             strongSelf.forecast = weatherForecast;
             [strongSelf setPickerViewData];
-            [strongSelf updateUi];
+            [strongSelf refreshUI];
         }else{
             NSLog(@"Error %@", error);
         }
@@ -169,37 +199,9 @@
 }
 
 
--(void) updateUi{
-    
-    NSString * icon = self.selectedForecast.icon;
-    
-    NSString * iconName = [WeatherHelpher weatherIcon:icon];
-    
-    self.imgWeatherIcon.image = [UIImage imageNamed:iconName];
-    // NSLog(@"Icon Name %@", iconName);
-    
-    self.lblSummary.text = self.selectedForecast.summary;
-    
-    [self.lblSummary sizeToFit];
-    
-    
-    
-    NSLog(@"%@",[NSString stringWithFormat:@"%.2lf",self.selectedForecast.temperatureMax]);
-    
-    
-       // NSLog(@"%f", (self.selectedForecast.temperatureMax-32)/1.8);
-    
-        NSString *temperature = [NSString stringWithFormat:@"%@%@C",[NSString stringWithFormat:@"%.0lf",(self.selectedForecast.temperatureMax-32)/1.8], @"\u00B0"];
-    self.lblTemperature.text = temperature ;
-
-    [self.lblTemperature sizeToFit];
-    self.lblHummidity.text =[NSString stringWithFormat:@"%.0lf %%", self.selectedForecast.humidity*100];
-    self.lblRain.text =[NSString stringWithFormat:@"%.0lf %%", self.selectedForecast.precipProbability*100];
-    
-}
 
 
-
+#pragma mark - helper class
 -(NSString*) getDateFromDouble:(double ) doubleTime{
     
     NSDate * date = [NSDate dateWithTimeIntervalSince1970:doubleTime];
