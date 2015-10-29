@@ -10,7 +10,12 @@
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UISegmentedControl *segmentControl;
+@property (weak, nonatomic) IBOutlet UIImageView *imgWeatherIcon;
+@property (weak, nonatomic) IBOutlet UILabel *lblHummidity;
+@property (weak, nonatomic) IBOutlet UILabel *lblRain;
+@property (weak, nonatomic) IBOutlet UILabel *lblSummary;
 
+@property (weak, nonatomic) IBOutlet UILabel *lblTemperature;
 @end
 
 @implementation ViewController
