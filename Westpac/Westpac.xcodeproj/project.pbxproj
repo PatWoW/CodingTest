@@ -16,6 +16,12 @@
 		42A513681BE23B7600DCFB9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42A513661BE23B7600DCFB9C /* LaunchScreen.storyboard */; };
 		42A513731BE23B7700DCFB9C /* WestpacTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A513721BE23B7700DCFB9C /* WestpacTests.m */; };
 		42A5137E1BE23B7700DCFB9C /* WestpacUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A5137D1BE23B7700DCFB9C /* WestpacUITests.m */; };
+		42A5138F1BE24B1400DCFB9C /* Cities+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A5138C1BE24B1400DCFB9C /* Cities+CoreDataProperties.m */; };
+		42A513901BE24B1400DCFB9C /* Cities+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A5138C1BE24B1400DCFB9C /* Cities+CoreDataProperties.m */; };
+		42A513911BE24B1400DCFB9C /* Cities+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A5138C1BE24B1400DCFB9C /* Cities+CoreDataProperties.m */; };
+		42A513921BE24B1400DCFB9C /* Cities.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A5138E1BE24B1400DCFB9C /* Cities.m */; };
+		42A513931BE24B1400DCFB9C /* Cities.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A5138E1BE24B1400DCFB9C /* Cities.m */; };
+		42A513941BE24B1400DCFB9C /* Cities.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A5138E1BE24B1400DCFB9C /* Cities.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,10 @@
 		42A513791BE23B7700DCFB9C /* WestpacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WestpacUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42A5137D1BE23B7700DCFB9C /* WestpacUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WestpacUITests.m; sourceTree = "<group>"; };
 		42A5137F1BE23B7700DCFB9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42A5138B1BE24B1400DCFB9C /* Cities+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Cities+CoreDataProperties.h"; sourceTree = "<group>"; };
+		42A5138C1BE24B1400DCFB9C /* Cities+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Cities+CoreDataProperties.m"; sourceTree = "<group>"; };
+		42A5138D1BE24B1400DCFB9C /* Cities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cities.h; sourceTree = "<group>"; };
+		42A5138E1BE24B1400DCFB9C /* Cities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cities.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +93,7 @@
 		42A513491BE23B7600DCFB9C = {
 			isa = PBXGroup;
 			children = (
+				42A513951BE24B1D00DCFB9C /* Model */,
 				42A513541BE23B7600DCFB9C /* Westpac */,
 				42A513711BE23B7700DCFB9C /* WestpacTests */,
 				42A5137C1BE23B7700DCFB9C /* WestpacUITests */,
@@ -141,6 +152,17 @@
 				42A5137F1BE23B7700DCFB9C /* Info.plist */,
 			);
 			path = WestpacUITests;
+			sourceTree = "<group>";
+		};
+		42A513951BE24B1D00DCFB9C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				42A5138B1BE24B1400DCFB9C /* Cities+CoreDataProperties.h */,
+				42A5138C1BE24B1400DCFB9C /* Cities+CoreDataProperties.m */,
+				42A5138D1BE24B1400DCFB9C /* Cities.h */,
+				42A5138E1BE24B1400DCFB9C /* Cities.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,9 +295,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42A513921BE24B1400DCFB9C /* Cities.m in Sources */,
 				42A5135D1BE23B7600DCFB9C /* ViewController.m in Sources */,
 				42A5135A1BE23B7600DCFB9C /* AppDelegate.m in Sources */,
 				42A513571BE23B7600DCFB9C /* main.m in Sources */,
+				42A5138F1BE24B1400DCFB9C /* Cities+CoreDataProperties.m in Sources */,
 				42A513631BE23B7600DCFB9C /* Westpac.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +308,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42A513931BE24B1400DCFB9C /* Cities.m in Sources */,
+				42A513901BE24B1400DCFB9C /* Cities+CoreDataProperties.m in Sources */,
 				42A513731BE23B7700DCFB9C /* WestpacTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,6 +318,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42A513941BE24B1400DCFB9C /* Cities.m in Sources */,
+				42A513911BE24B1400DCFB9C /* Cities+CoreDataProperties.m in Sources */,
 				42A5137E1BE23B7700DCFB9C /* WestpacUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
