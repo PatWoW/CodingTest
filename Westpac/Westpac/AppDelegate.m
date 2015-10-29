@@ -130,6 +130,8 @@
     
         NSError *error = nil;
     
+    [self deleteAllDataIfAny];
+    
              NSManagedObject *model1 = [NSEntityDescription insertNewObjectForEntityForName:@"Cities" inManagedObjectContext:[self managedObjectContext]];
     
             [model1 setValue:@"Sydney" forKey:@"city"];
@@ -192,6 +194,21 @@
     
     NSLog(@"%@", self.cities);
     
+    
+}
+
+-(void) deleteAllDataIfAny{
+    NSMutableArray * localDataArray;
+    NSManagedObjectContext *managedObjectContext = [self managedObjectContext];
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Cities"];
+    localDataArray = [[managedObjectContext executeFetchRequest:fetchRequest error:nil] mutableCopy];
+ 
+    for (NSManagedObject *city in localDataArray) {
+        [[self managedObjectContext] deleteObject:city];
+    }
+    [[self managedObjectContext] save:nil];
+    
+
     
 }
 @end

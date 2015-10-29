@@ -43,6 +43,9 @@
 		42A513B71BE24CC700DCFB9C /* Hourly.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A513A71BE24CC700DCFB9C /* Hourly.m */; };
 		42A513B81BE24CC700DCFB9C /* Hourly.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A513A71BE24CC700DCFB9C /* Hourly.m */; };
 		42A513B91BE24CC700DCFB9C /* Hourly.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A513A71BE24CC700DCFB9C /* Hourly.m */; };
+		42A513BC1BE2505E00DCFB9C /* WeatherHelpher.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A513BB1BE2505E00DCFB9C /* WeatherHelpher.m */; };
+		42A513BD1BE2505E00DCFB9C /* WeatherHelpher.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A513BB1BE2505E00DCFB9C /* WeatherHelpher.m */; };
+		42A513BE1BE2505E00DCFB9C /* WeatherHelpher.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A513BB1BE2505E00DCFB9C /* WeatherHelpher.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +101,8 @@
 		42A513A51BE24CC700DCFB9C /* Flags.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Flags.m; sourceTree = "<group>"; };
 		42A513A61BE24CC700DCFB9C /* Hourly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hourly.h; sourceTree = "<group>"; };
 		42A513A71BE24CC700DCFB9C /* Hourly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hourly.m; sourceTree = "<group>"; };
+		42A513BA1BE2505E00DCFB9C /* WeatherHelpher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WeatherHelpher.h; path = Westpac/WeatherHelpher.h; sourceTree = "<group>"; };
+		42A513BB1BE2505E00DCFB9C /* WeatherHelpher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WeatherHelpher.m; path = Westpac/WeatherHelpher.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +133,7 @@
 		42A513491BE23B7600DCFB9C = {
 			isa = PBXGroup;
 			children = (
+				42A513BF1BE2506400DCFB9C /* HelperClass */,
 				42A513961BE24C3600DCFB9C /* ServiceLayer */,
 				42A513951BE24B1D00DCFB9C /* Model */,
 				42A513541BE23B7600DCFB9C /* Westpac */,
@@ -220,6 +226,15 @@
 				42A513981BE24C5B00DCFB9C /* RestService.m */,
 			);
 			name = ServiceLayer;
+			sourceTree = "<group>";
+		};
+		42A513BF1BE2506400DCFB9C /* HelperClass */ = {
+			isa = PBXGroup;
+			children = (
+				42A513BA1BE2505E00DCFB9C /* WeatherHelpher.h */,
+				42A513BB1BE2505E00DCFB9C /* WeatherHelpher.m */,
+			);
+			name = HelperClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -359,6 +374,7 @@
 				42A513B41BE24CC700DCFB9C /* Flags.m in Sources */,
 				42A513A81BE24CC700DCFB9C /* WeatherForecast.m in Sources */,
 				42A513571BE23B7600DCFB9C /* main.m in Sources */,
+				42A513BC1BE2505E00DCFB9C /* WeatherHelpher.m in Sources */,
 				42A513AE1BE24CC700DCFB9C /* Daily.m in Sources */,
 				42A5138F1BE24B1400DCFB9C /* Cities+CoreDataProperties.m in Sources */,
 				42A513991BE24C5B00DCFB9C /* RestService.m in Sources */,
@@ -379,6 +395,7 @@
 				42A513AF1BE24CC700DCFB9C /* Daily.m in Sources */,
 				42A513AC1BE24CC700DCFB9C /* Currently.m in Sources */,
 				42A513901BE24B1400DCFB9C /* Cities+CoreDataProperties.m in Sources */,
+				42A513BD1BE2505E00DCFB9C /* WeatherHelpher.m in Sources */,
 				42A513B51BE24CC700DCFB9C /* Flags.m in Sources */,
 				42A513731BE23B7700DCFB9C /* WestpacTests.m in Sources */,
 				42A5139A1BE24C5B00DCFB9C /* RestService.m in Sources */,
@@ -396,6 +413,7 @@
 				42A513B01BE24CC700DCFB9C /* Daily.m in Sources */,
 				42A513AD1BE24CC700DCFB9C /* Currently.m in Sources */,
 				42A513911BE24B1400DCFB9C /* Cities+CoreDataProperties.m in Sources */,
+				42A513BE1BE2505E00DCFB9C /* WeatherHelpher.m in Sources */,
 				42A513B61BE24CC700DCFB9C /* Flags.m in Sources */,
 				42A5137E1BE23B7700DCFB9C /* WestpacUITests.m in Sources */,
 				42A5139B1BE24C5B00DCFB9C /* RestService.m in Sources */,
