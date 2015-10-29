@@ -17,6 +17,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [self processData];
     return YES;
 }
 
@@ -124,4 +126,72 @@
     }
 }
 
+-(void) processData{
+    
+        NSError *error = nil;
+    
+             NSManagedObject *model1 = [NSEntityDescription insertNewObjectForEntityForName:@"Cities" inManagedObjectContext:[self managedObjectContext]];
+    
+            [model1 setValue:@"Sydney" forKey:@"city"];
+            [model1 setValue:@"-33.873651" forKey:@"lat"];
+            [model1 setValue:@"151.2068896" forKey:@"lag"];
+    
+        if (![[self managedObjectContext] save:&error]) {
+            NSLog(@"Can't Save! %@ %@", error, [error localizedDescription]);
+        }
+    
+        NSManagedObject *model2 = [NSEntityDescription insertNewObjectForEntityForName:@"Cities" inManagedObjectContext:[self managedObjectContext]];
+    
+            [model2 setValue:@"Melbourne" forKey:@"city"];
+            [model2 setValue:@"-37.814107" forKey:@"lat"];
+            [model2 setValue:@"144.96328" forKey:@"lag"];
+    
+        if (![[self managedObjectContext] save:&error]) {
+            NSLog(@"Can't Save! %@ %@", error, [error localizedDescription]);
+        }
+    
+        NSManagedObject *model3 = [NSEntityDescription insertNewObjectForEntityForName:@"Cities" inManagedObjectContext:[self managedObjectContext]];
+    
+    
+        [model3 setValue:@"Brisbane" forKey:@"city"];
+        [model3 setValue:@"-27.4710107" forKey:@"lat"];
+        [model3 setValue:@"153.0234489" forKey:@"lag"];
+        if (![[self managedObjectContext] save:&error]) {
+            NSLog(@"Can't Save! %@ %@", error, [error localizedDescription]);
+        }
+    
+        NSManagedObject *model4 = [NSEntityDescription insertNewObjectForEntityForName:@"Cities" inManagedObjectContext:[self managedObjectContext]];
+    
+    
+    
+        [model4 setValue:@"Adelaide" forKey:@"city"];
+        [model4 setValue:@"-34.9286212" forKey:@"lat"];
+        [model4 setValue:@"138.5999594" forKey:@"lag"];
+    
+        if (![[self managedObjectContext] save:&error]) {
+            NSLog(@"Can't Save! %@ %@", error, [error localizedDescription]);
+        }
+    
+    
+        NSManagedObject *model5 = [NSEntityDescription insertNewObjectForEntityForName:@"Cities" inManagedObjectContext:[self managedObjectContext]];
+    
+    
+        [model5 setValue:@"Perth" forKey:@"city"];
+        [model5 setValue:@"-31.9530044" forKey:@"lat"];
+        [model5 setValue:@"115.8574693" forKey:@"lag"];
+        // Save the object to persistent store
+        if (![[self managedObjectContext] save:&error]) {
+            NSLog(@"Can't Save! %@ %@", error, [error localizedDescription]);
+        }
+    
+    
+    NSManagedObjectContext *managedObjectContext = [self managedObjectContext];
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Cities"];
+    self.cities = [[managedObjectContext executeFetchRequest:fetchRequest error:nil] mutableCopy];
+    
+    
+    NSLog(@"%@", self.cities);
+    
+    
+}
 @end
