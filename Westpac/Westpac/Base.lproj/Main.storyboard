@@ -31,7 +31,7 @@
                                     <action selector="segmentControlChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="EI0-Gd-FRa"/>
                                 </connections>
                             </segmentedControl>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sunny" translatesAutoresizingMaskIntoConstraints="NO" id="dyM-5E-2fv">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dyM-5E-2fv">
                                 <rect key="frame" x="56" y="180" width="100" height="91"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="91" id="8Fq-p6-yjP"/>
@@ -47,7 +47,7 @@
                                     <constraint firstAttribute="width" constant="134" id="do4-6T-NIr"/>
                                 </constraints>
                                 <attributedString key="attributedText">
-                                    <fragment content="45%">
+                                    <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="24" name="HelveticaNeue"/>
@@ -94,7 +94,7 @@
                                     <constraint firstAttribute="height" constant="34" id="wzw-IJ-n4W"/>
                                 </constraints>
                                 <attributedString key="attributedText">
-                                    <fragment content="50%">
+                                    <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="24" name="HelveticaNeue"/>
@@ -115,7 +115,7 @@
                                     <constraint firstAttribute="height" constant="79" id="xQL-ir-GjI"/>
                                 </constraints>
                                 <attributedString key="attributedText">
-                                    <fragment content="Chance of rain Chance of rain Chance of rain">
+                                    <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="30" name="HelveticaNeue"/>
@@ -181,7 +181,7 @@
                                     <constraint firstAttribute="width" constant="169" id="iXr-pS-zfL"/>
                                 </constraints>
                                 <attributedString key="attributedText">
-                                    <fragment content="99°c">
+                                    <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="67" name="HelveticaNeue"/>
@@ -237,7 +237,4 @@
             <point key="canvasLocation" x="836.5" y="311.5"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Sunny" width="180" height="190"/>
-    </resources>
 </document>
