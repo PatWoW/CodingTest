@@ -61,7 +61,7 @@
 
 -(void) refreshUI{
     
-    NSString * icon = self.selectedForecast.icon;
+    NSString * icon = self.forecast.currently.icon;
     
     NSString * iconName = [WeatherHelpher weatherIcon:icon];
     
