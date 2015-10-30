@@ -111,6 +111,7 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iol-dD-ie8">
                                 <rect key="frame" x="20" y="416" width="335" height="79"/>
+                                <accessibility key="accessibilityConfiguration" identifier="lblSummary"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="79" id="xQL-ir-GjI"/>
                                 </constraints>
@@ -166,6 +167,7 @@
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kaz-kd-O79">
                                 <rect key="frame" x="20" y="523" width="339" height="64"/>
+                                <accessibility key="accessibilityConfiguration" identifier="pickerView"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="Ep7-SZ-b8J"/>
                                 </constraints>
@@ -179,6 +181,7 @@
                             </activityIndicatorView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yum-cl-I2D">
                                 <rect key="frame" x="158" y="125" width="169" height="146"/>
+                                <accessibility key="accessibilityConfiguration" identifier="lblTemperature"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="146" id="4zr-Kx-Fr8"/>
                                     <constraint firstAttribute="width" constant="169" id="iXr-pS-zfL"/>

@@ -7,6 +7,10 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "RestService.h"
+#import "AppDelegate.h"
+#import "Daily.h"
+#import "Hourly.h"
 
 @interface WestpacTests : XCTestCase
 
@@ -24,9 +28,32 @@
     [super tearDown];
 }
 
-- (void)testExample {
+- (void)testWebService {
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    XCTestExpectation *expectation = [self expectationWithDescription:@"Forecast Data"];
+    
+    AppDelegate * appDelegate = [[UIApplication sharedApplication] delegate];
+    [RestService sharedManager].city= appDelegate.cities[0];
+    
+    [[RestService sharedManager] fetchDataWithCompletionBlock:^(WeatherForecast *weatherForecast, NSError *error) {
+      
+        XCTAssertEqualObjects(weatherForecast.timezone, @"Australia/Sydney", "Base should be Australia/Sydney");
+        
+        XCTAssertTrue([weatherForecast.daily.forecastData isKindOfClass:[NSArray class]], @"Should return a NSArray");
+        XCTAssertTrue([weatherForecast.hourly.data isKindOfClass:[NSArray class]], @"Should return a NSArray");
+
+        
+        [expectation fulfill];
+        
+    }];
+    
+    [self waitForExpectationsWithTimeout:5 handler:^(NSError *error) {
+        if (error) {
+            NSLog(@"Error : %@", error);
+        }
+    }];
 }
 
 - (void)testPerformanceExample {
